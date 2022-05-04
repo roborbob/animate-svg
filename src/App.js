@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './App.scss';
+import Context from "./context/createContext"; 
+import ToolBar from "./components/toolBar/ToolBar";
+import PreviewBox from "./components/previewBox/PreviewBox";
+import UploadFile from "./components/uploadFile/UploadFile";
+
+
+
 
 function App() {
+  const [context,setContext] = React.useState(null)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="box">
+    <Context.Provider value={[context,setContext]}>
+      <div className="col-left">
+        <ToolBar/>
+      </div>
+      <div className="col-right">
+          <UploadFile/>
+          <PreviewBox/>
+      </div>
+      </Context.Provider>
     </div>
   );
 }

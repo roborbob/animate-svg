@@ -1,0 +1,37 @@
+{
+    "global": {
+        "id": "",
+        "style": "",
+        "class": ""
+    },
+    "target": {
+        "attributeName": "", 
+        "additive": "", 
+        "accumulate": ""
+    },
+    "value": {
+        "calcMode": "", 
+        "values": "", 
+        "keyTimes": "", 
+        "keySplines": "", 
+        "from": "", 
+        "to": "", 
+        "by":""
+    },
+    "timing": {
+        "begin": "", 
+        "dur": "", 
+        "end": "", 
+        "min": "", 
+        "max": "", 
+        "restart": "", 
+        "repeatCount": "", 
+        "repeatDur": "", 
+        "fill": ""
+    },
+    "event": {
+        "onbegin": "", 
+        "onend": "", 
+        "onrepeat": ""
+    }
+}
