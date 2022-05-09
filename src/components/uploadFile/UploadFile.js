@@ -6,12 +6,11 @@ export default function UploadFile() {
     const [file,setFile] = React.useState()
 
     React.useEffect(() => {
-        const previewBox = document.getElementById("previewBox");
         let reader = new FileReader();       
         if(file) {
             reader.onload = function() {
                 let data = reader.result;
-                setContext(data)
+                setContext(true)
             }
             reader.readAsText(file);
         }

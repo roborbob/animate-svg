@@ -14,10 +14,11 @@ export default function getAttributes(svg) {
     if (svg.hasChildNodes) {
         for(let i = 0; i < svg.childNodes.length; i++) {
             if(svg.childNodes[i]?.nodeName !== '#text') {
+                svg?.childNodes[i]?.setAttribute("class", `child ${i}`)
                 childNodeAttributes.push(createAttributeArray(svg.childNodes[i]))
             }
         }
     }
 
-    return [svgAttributes,childNodeAttributes];
+    return [svg,svgAttributes,childNodeAttributes];
 }

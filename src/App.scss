@@ -26,3 +26,11 @@ svg {
   width: 500px;
   height: 500px;
 }
+
+.child:hover{
+  transition: 0.2s;
+  stroke: rgb(39, 30, 25) 3px solid;
+  stroke-dasharray: 5px;
+  cursor: pointer;
+  opacity: 0.3;
+}

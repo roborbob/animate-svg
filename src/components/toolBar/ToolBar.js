@@ -10,10 +10,10 @@ export default function ToolBar() {
  setAnimation();
 
  React.useEffect(() => {
-    if(context !== null) {
-        let svg = document.getElementsByTagName('svg')[0]
-        let svgAttributes = getAttributes(svg)
-        console.log(svgAttributes)
+    if(context) {
+        let svg = document.getElementsByTagName('svg')
+        // console.log(svg)
+        // let svgAttributes = getAttributes(svg)
     }
  },[context])
 

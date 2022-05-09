@@ -9,7 +9,11 @@ import UploadFile from "./components/uploadFile/UploadFile";
 
 
 function App() {
-  const [context,setContext] = React.useState(null)
+  const [context,setContext] = React.useState(false)
+
+  function targetHandler(e) {
+    console.log(e.target.value)
+  }
 
   return (
     <div id="box">

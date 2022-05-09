@@ -1,7 +1,5 @@
 import data from "../data.json";
 
-export default function setAnimation() {
-   console.log(data)
-
+export default function setAnimation(target) {
     return data
 }
