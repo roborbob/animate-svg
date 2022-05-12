@@ -1,37 +1,28 @@
 {
-    "global": {
-        "id": "",
-        "style": "",
-        "class": ""
-    },
-    "target": {
-        "attributeName": "", 
-        "additive": "", 
-        "accumulate": ""
-    },
-    "value": {
-        "calcMode": "", 
-        "values": "", 
-        "keyTimes": "", 
-        "keySplines": "", 
-        "from": "", 
-        "to": "", 
-        "by":""
-    },
-    "timing": {
-        "begin": "", 
-        "dur": "", 
-        "end": "", 
-        "min": "", 
-        "max": "", 
-        "restart": "", 
-        "repeatCount": "", 
-        "repeatDur": "", 
-        "fill": ""
-    },
-    "event": {
-        "onbegin": "", 
-        "onend": "", 
-        "onrepeat": ""
-    }
+"id": "",
+"xlinkHref": "", 
+"style": "",
+"class": "",
+"attributeName": "", 
+"additive": "", 
+"accumulate": "",
+"calcMode": "", 
+"values": "", 
+"keyTimes": "", 
+"keySplines": "", 
+"from": "", 
+"to": "", 
+"by":"",
+"begin": "", 
+"dur": "", 
+"end": "", 
+"min": "500", 
+"max": "", 
+"restart": "", 
+"repeatCount": "", 
+"repeatDur": "", 
+"fill": "",
+"onbegin": "", 
+"onend": "", 
+"onrepeat": ""
 }

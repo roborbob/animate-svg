@@ -1,16 +1,20 @@
 import React from 'react'
-import Context from "../../context/createContext";
+import "./style.scss";
+import {Context, ContextData} from "../../context/createContext";
 
 export default function UploadFile() {
     const [context,setContext] = React.useContext(Context)
+    const [contextData,setContextData] = React.useContext(ContextData)
     const [file,setFile] = React.useState()
 
     React.useEffect(() => {
-        let reader = new FileReader();       
+        let reader = new FileReader();  
+        let domParser = new DOMParser();     
         if(file) {
             reader.onload = function() {
-                let data = reader.result;
+                let data = domParser.parseFromString(reader.result, "image/svg+xml")?.firstChild;
                 setContext(true)
+                setContextData(data)
             }
             reader.readAsText(file);
         }
@@ -21,8 +25,8 @@ export default function UploadFile() {
     }
 
   return (
-      <form>
-        <input type="file" onChange={handleChange} accept="image/*"/>
+      <form style={{display: context ? `none` : `block`}}>
+        <input type="file" className="input-box" onChange={handleChange} accept="image/*"/>
      </form>
   )
 }
